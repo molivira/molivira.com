@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOLIVIRA | Premium Olive Oil</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f7f5ef;
+color:#333;
+}
+
+header{
+background:#214d2d;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:42px;
+margin:0;
+letter-spacing:3px;
+}
+
+header p{
+font-size:18px;
+margin-top:10px;
+}
+
+.hero{
+padding:50px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:32px;
+color:#214d2d;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#b68d2c;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:18px;
+}
+
+footer{
+margin-top:70px;
+background:#214d2d;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>MOLIVIRA</h1>
+
+<p>Premium Olive Oil From Egypt</p>
+
+</header>
+
+<section class="hero">
+
+<h2>Welcome to MOLIVIRA</h2>
+
+<p>
+Discover the authentic taste of premium extra virgin olive oil,
+carefully selected to bring natural quality and rich flavor to every home.
+</p>
+
+<a class="button" href="#">Coming Soon</a>
+
+</section>
+
+<footer>
+
+© 2026 MOLIVIRA. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
