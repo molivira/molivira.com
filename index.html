@@ -3,283 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موليڤيرا | MOLIVIRA - زيت زيتون بكر ممتاز</title>
+    <title>موليڤيرا | MOLIVIRA - لزيت الزيتون البكر الممتاز الفاخر</title>
     <style>
-        :root {
-            --primary-color: #556B2F; /* أخضر زيتوني فاخر */
-            --accent-color: #D4AF37; /* ذهبي نقي */
-            --text-color: #2F3E1B;
-            --bg-color: #FDFBF7;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        /* شريط العنوان العلوي */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 25px 10px;
-            border-bottom: 4px solid var(--accent-color);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            color: #E8EEDF;
-        }
-
-        /* القسم الرئيسي الترحيبي */
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(rgba(253, 251, 247, 0.9), rgba(253, 251, 247, 0.9)), url('olive-bg.jpg');
-            background-size: cover;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            font-size: 1.2rem;
-        }
-
-        /* قسم المنتجات والاحجام */
-        .section-title {
-            text-align: center;
-            margin: 40px 0 20px 0;
-            color: var(--primary-color);
-            font-size: 1.8rem;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background-color: var(--accent-color);
-            margin: 8px auto 0 auto;
-        }
-
-        .products-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 0 20px;
-        }
-
-        .product-card {
-            background: white;
-            border: 1px solid #E5E0D8;
-            border-radius: 12px;
-            padding: 25px;
-            width: 280px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .product-icon {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .product-card h3 {
-            margin-bottom: 10px;
-            color: var(--primary-color);
-        }
-
-        .price {
-            font-size: 1.3rem;
-            color: var(--text-color);
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        /* قسم الفوائد الصحية */
-        .benefits-section {
-            background-color: #E8EEDF;
-            padding: 40px 20px;
-            margin-top: 40px;
-        }
-
-        .benefit-item {
-            max-width: 700px;
-            margin: 15px auto;
-            background: white;
-            padding: 15px 20px;
-            border-right: 5px solid var(--primary-color);
-            border-radius: 4px;
-        }
-
-        /* أزرار التواصل والطلب */
-        .cta-container {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .btn-whatsapp {
-            display: inline-block;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
-            transition: background 0.3s;
-            margin-bottom: 25px;
-        }
-
-        .btn-whatsapp:hover {
-            background-color: #20BA5A;
-        }
-
-        .email-box {
-            background-color: white;
-            border: 1px dashed #D4AF37;
-            border-radius: 8px;
-            padding: 20px;
-            max-width: 500px;
-            margin: 0 auto;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
-
-        .email-contact {
-            font-size: 1.05rem;
-            color: var(--text-color);
-            margin: 8px 0;
-            text-align: right;
-        }
-
-        .email-contact a {
-            color: var(--primary-color);
-            font-weight: bold;
-            text-decoration: none;
-            word-break: break-all;
-        }
-
-        .email-contact a:hover {
-            text-decoration: underline;
-        }
-
-        /* أسفل الموقع */
-        footer {
-            background-color: #2F3E1B;
-            color: #DFE6D4;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            margin-top: 40px;
-        }
+        :root { --primary-color: #2c5e3b; --secondary-color: #8b9a46; --dark-color: #1e3525; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9fbf9; margin: 0; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .about-section { background: var(--white); padding: 30px; border-radius: 12px; border-right: 5px solid var(--secondary-color); }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .product-card { background: var(--white); border-radius: 12px; overflow: hidden; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .product-img { width: 100%; height: 250px; object-fit: cover; background-color: #eaeaea; }
+        .contact-section { background: var(--dark-color); color: var(--white); padding: 40px 30px; border-radius: 12px; text-align: center; }
+        .whatsapp-btn { background-color: #25D366; color: var(--white); padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 20px; }
+        .emails-box a { color: #79b3f2; text-decoration: none; }
     </style>
 </head>
 <body>
+    <div class="container">
+        <section class="about-section">
+            <h2>موليڤيرا للتصدير وتجارة المواد الغذائية</h2>
+            <p>زيت زيتون بكر ممتاز، عصرة أولى على البارد، من أجود المزارع المصرية.</p>
+        </section>
 
-    <!-- الهيدر العلوي -->
-    <header>
-        <h1>MOLIVIRA</h1>
-        <p>موليڤيرا لزيت الزيتون البكر الممتاز الفاخر</p>
-    </header>
-
-    <!-- القسم الترحيبي -->
-    <div class="hero">
-        <h2>عصرة أولى على البارد - نقي 100%</h2>
-        <p>من قلب المزارع المصرية نأتيك بزيت زيتون استثنائي، يُجنى بكل حب ويُعصر بعناية فائقة ليكون رفيقاً صحياً ومثالياً لكل مائدتك.</p>
-    </div>
-
-    <!-- قسم أحجام المنتجات -->
-    <h2 class="section-title">الأحجام المتاحة للطلب</h2>
-    <div class="products-container">
-        <div class="product-card">
-            <div class="product-icon">🍾</div>
-            <h3>عبوة 250 مل</h3>
-            <p>مثالية للتجربة والاستخدام الشخصي السريع</p>
-            <div class="price">قريباً بالتسعير الجديد</div>
-        </div>
-        <div class="product-card">
-            <div class="product-icon">🍾</div>
-            <h3>عبوة 500 مل</h3>
-            <p>الحجم المتوسط الأكثر طلباً للعائلات الصغيرة</p>
-            <div class="price">قريباً بالتسعير الجديد</div>
-        </div>
-        <div class="product-card">
-            <div class="product-icon">🫙</div>
-            <h3>عبوة 1 لتر كامل</h3>
-            <p>التوفير الأكبر لعشاق زيت الزيتون اليومي</p>
-            <div class="price">قريباً بالتسعير الجديد</div>
-        </div>
-    </div>
-
-    <!-- قسم الفوائد -->
-    <div class="benefits-section">
-        <h2 class="section-title">لماذا موليڤيرا؟</h2>
-        <div class="benefit-item">
-            <strong>🥇 بكر ممتاز 100%:</strong> خالي تماماً من أي إضافات أو زيوت مهدرجة.
-        </div>
-        <div class="benefit-item">
-            <strong>❄️ عصر على البارد:</strong> يحافظ على كامل الفيتامينات ومضادات الأكسدة الطبيعية.
-        </div>
-        <div class="benefit-item">
-            <strong>🌿 طعم ورائحة أصلية:</strong> يمنح أكلاتك النكهة الغنية المميزة للزيتون الأصلي.
-        </div>
-    </div>
-
-    <!-- قسم طلب المنتج عبر الواتساب والإيميلات -->
-    <div class="cta-container">
-        <h2 style="margin-bottom: 20px; color: var(--primary-color);">هل تود تذوق الفخامة؟</h2>
-        <p style="margin-bottom: 25px;">اضغط على الزر بالأسفل للتحدث معنا مباشرة عبر الواتساب وحجز طلبيتك</p>
-        
-        <!-- زر الواتساب المباشر برقمك -->
-        <a href="https://wa.me" class="btn-whatsapp" target="_blank">💬 اطلب موليڤيرا عبر الواتساب</a>
-        
-        <!-- صندوق البريد الإلكتروني المشترك -->
-        <div class="email-box">
-            <div class="email-contact">
-                ✉️ راسلنا على الجيميل الشخصي المباشر: <br>
-                <a href="mailto:mstfyabwalqasm5@gmail.com">mstfyabwalqasm5@gmail.com</a>
+        <h2 style="text-align:center; color:#2c5e3b;">الأحجام المتاحة</h2>
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="oil-250ml.jpg" alt="250ml" class="product-img" onerror="this.src='https://placeholder.com'">
+                <h3>250 مل</h3>
             </div>
-            <div style="height: 1px; background-color: #E5E0D8; margin: 10px 0;"></div>
-            <div class="email-contact">
-                💼 البريد الرسمي (مؤجل للتجهيز): <br>
-                <a href="mailto:info@molivira.com">info@molivira.com</a>
+            <div class="product-card">
+                <img src="oil-500ml.jpg" alt="500ml" class="product-img" onerror="this.src='https://placeholder.com'">
+                <h3>500 مل</h3>
             </div>
-        </div>
+            <div class="product-card">
+                <img src="oil-1liter.jpg" alt="1Liter" class="product-img" onerror="this.src='https://placeholder.com'">
+                <h3>1 لتر</h3>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>لطلب والتعاقد</h2>
+            <a href="https://wa.me" class="whatsapp-btn">واتساب: 201024266851+</a>
+            <div class="emails-box">
+                <p>📧 <a href="mailto:info@molivira.com">info@molivira.com</a></p>
+                <p>✈️ <a href="mailto:export@molivira.com">export@molivira.com</a></p>
+            </div>
+        </section>
     </div>
-
-    <!-- الفوتر السفلي -->
-    <footer>
-        <p>© 2026 موليڤيرا - MOLIVIRA. جميع الحقوق محفوظة.</p>
-        <p>صنع بفخر في مصر 🇪🇬</p>
-    </footer>
-
 </body>
 </html>
