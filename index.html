@@ -2,22 +2,112 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>موليڤيرا | MOLIVIRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موليڤيرا | MOLIVIRA - لزيت الزيتون البكر الممتاز</title>
     <style>
-        body { font-family: sans-serif; text-align: center; direction: rtl; }
-        .contact-section { background: #1e3525; color: white; padding: 20px; }
-        .whatsapp-btn { background-color: #25D366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 20px; }
-        .email-link { color: #79b3f2; }
+        :root { --primary: #1e3525; --accent: #2c5e3b; --light-green: #eef2ef; --white: #ffffff; --text: #333333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f4; margin: 0; color: var(--text); line-height: 1.6; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 40px 20px; background-color: var(--primary); color: var(--white); border-radius: 0 0 20px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.2rem; letter-spacing: 1px; }
+        header p { margin: 10px 0 0 0; font-size: 1.1rem; opacity: 0.9; }
+        .about-box { background: var(--white); padding: 25px; margin: 30px 0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); border-right: 5px solid var(--accent); }
+        .about-box h2 { color: var(--accent); margin-top: 0; }
+        .products-section h2 { text-align: center; color: var(--primary); margin-bottom: 25px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .product-card { background: var(--white); border-radius: 12px; overflow: hidden; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #e1e8e2; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-img { width: 100%; height: 240px; object-fit: cover; background-color: var(--light-green); display: block; }
+        .product-info { padding: 15px; background: var(--white); }
+        .product-info h3 { margin: 0 0 5px 0; font-size: 1.2rem; color: var(--primary); }
+        .product-info p { margin: 0; font-size: 0.9rem; color: #666; }
+        .contact-section { background: var(--primary); color: var(--white); padding: 35px 20px; border-radius: 15px; text-align: center; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .contact-section h2 { margin-top: 0; font-size: 1.6rem; }
+        .whatsapp-btn { background-color: #25D366; color: var(--white); padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; justify-content: center; gap: 10px; margin: 15px 0; font-size: 1.1rem; box-shadow: 0 4px 10px rgba(37,211,102,0.3); }
+        .emails-container { margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
+        .email-row { margin: 10px 0; font-size: 1rem; }
+        .email-row a { color: #8bc34a; text-decoration: none; font-weight: bold; }
+        .email-row a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 20px; font-size: 0.85rem; color: #777; margin-top: 40px; }
     </style>
 </head>
 <body>
-    <h1>MOLIVIRA - زيت زيتون بكر ممتاز</h1>
-    <div class="contact-section">
-        <h2>تواصل معنا للطلب أو التصدير</h2>
-        <p>الرقم: 201024266851+</p>
-        <a href="https://wa.me" class="whatsapp-btn">واتساب</a>
-        <p>البريد: <a href="mailto:info@molivira.com" class="email-link">info@molivira.com</a></p>
-        <p>التصدير: <a href="mailto:export@molivira.com" class="email-link">export@molivira.com</a></p>
+
+    <header>
+        <h1>موليڤيرا | MOLIVIRA</h1>
+        <p>لعصر وتعبئة وتصدير زيت الزيتون البكر الممتاز الفاخر</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- قسم عن الشركة المستوحى من السجل التجاري -->
+        <section class="about-box">
+            <h2>من نحن</h2>
+            <p><strong>موليڤيرا للتصدير وتجارة وتوزيع المواد الغذائية</strong> هي علامة تجارية مصرية رائدة متخصصة في تقديم أجود أنواع زيت الزيتون البكر الممتاز. نعتمد على العصرة الأولى على البارد لنضمن الحفاظ على كامل الفيتامينات، النكهة الغنية، والرائحة الأصلية الفواحة، لنقدم منتجاً استثنائياً يليق بمائدتكم ويلبي أعلى معايير الجودة العالمية المخصصة للتصدير والتوزيع المحلي.</p>
+        </section>
+
+        <!-- قسم المنتجات الشامل للأحجام الثلاثة -->
+        <section class="products-section">
+            <h2>الأحجام المتاحة للطلب</h2>
+            <div class="products-grid">
+                
+                <!-- عبوة ربع لتر -->
+                <div class="product-card">
+                    <img src="oil-250ml.jpg" alt="عبوة موليڤيرا ربع لتر" class="product-img" onerror="this.src='https://placeholder.com'">
+                    <div class="product-info">
+                        <h3>عبوة ربع لتر (250 مل)</h3>
+                        <p>مثالية للتجربة والاستخدام الشخصي السريع</p>
+                    </div>
+                </div>
+
+                <!-- عبوة نصف لتر -->
+                <div class="product-card">
+                    <img src="oil-500ml.jpg" alt="عبوة موليڤيرا نصف لتر" class="product-img" onerror="this.src='https://placeholder.com'">
+                    <div class="product-info">
+                        <h3>عبوة نصف لتر (500 مل)</h3>
+                        <p>الحجم المتوسط الأكثر طلباً للعائلات الصغيرة</p>
+                    </div>
+                </div>
+
+                <!-- عبوة لتر كامل -->
+                <div class="product-card">
+                    <img src="oil-1liter.jpg" alt="عبوة موليڤيرا لتر كامل" class="product-img" onerror="this.src='https://placeholder.com'">
+                    <div class="product-info">
+                        <h3>عبوة 1 لتر كامل</h3>
+                        <p>التوفير الأكبر لعشاق الاستخدام اليومي المستمر</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- قسم التواصل والتعاقد الرسمي بعد حل الأخطاء ورابط الواتساب -->
+        <section class="contact-section">
+            <h2>للطلب الفوري والتعاقدات الدولية</h2>
+            <p>اضغط على الزر بالأسفل للتحدث معنا مباشرة عبر الواتساب وحجز طلبيتك أو شحنتك</p>
+            
+            <a href="https://wa.me" target="_blank" class="whatsapp-btn">
+                💬 تواصل معنا عبر الواتساب
+            </a>
+
+            <div class="emails-container">
+                <div class="email-row">
+                    💼 <strong>البريد الإلكتروني الرسمي العام:</strong> 
+                    <a href="mailto:info@molivira.com">info@molivira.com</a>
+                </div>
+                <div class="email-row">
+                    ✈️ <strong>إدارة التصدير والتعاقدات التجارية:</strong> 
+                    <a href="mailto:export@molivira.com">export@molivira.com</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 موليڤيرا - MOLIVIRA. جميع الحقوق محفوظة.</p>
+            <p>صنع بفخر في مصر 🇪🇬</p>
+        </footer>
+
     </div>
+
 </body>
 </html>
