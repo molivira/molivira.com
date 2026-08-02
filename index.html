@@ -1,63 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MOLIVIRA | Premium Extra Virgin Olive Oil</title>
+<title>MOLIVIRA | موليڤيرا - Premium Extra Virgin Olive Oil</title>
 
 <meta name="description"
-content="MOLIVIRA Premium Extra Virgin Olive Oil from selected Egyptian farms.">
+content="MOLIVIRA موليڤيرا - زيت زيتون بكر ممتاز من أجود ثمار الزيتون المصرية. متوفر 250 مل، 500 مل و1 لتر.">
+
+<meta name="keywords"
+content="MOLIVIRA, موليڤيرا, زيت زيتون, زيت زيتون بكر ممتاز, Extra Virgin Olive Oil, Egyptian Olive Oil">
 
 <style>
+
 :root{
---g:#102b1b;
---g2:#183b25;
+--green:#0d2d1c;
+--green2:#143d26;
 --gold:#d8ad4b;
---gold2:#f0cf72;
---cream:#f6f0df;
+--gold2:#f1d277;
+--cream:#f7f2e5;
 --white:#fff;
---muted:#6e756e;
+--text:#202820;
+--muted:#697169;
 }
 
 *{
 box-sizing:border-box;
 margin:0;
-padding:0
+padding:0;
 }
 
 html{
-scroll-behavior:smooth
+scroll-behavior:smooth;
 }
 
 body{
 font-family:Georgia,"Times New Roman",serif;
 background:var(--cream);
-color:#1c241e;
-line-height:1.65
+color:var(--text);
+line-height:1.7;
 }
 
 a{
 text-decoration:none;
-color:inherit
+color:inherit;
 }
 
 .container{
-width:min(1180px,92%);
-margin:auto
+width:min(1200px,92%);
+margin:auto;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 
 header{
 position:fixed;
 top:0;
 left:0;
 right:0;
-z-index:20;
-background:rgba(16,43,27,.96);
+z-index:100;
+background:rgba(13,45,28,.96);
 backdrop-filter:blur(12px);
-border-bottom:1px solid rgba(216,173,75,.25)
+border-bottom:1px solid rgba(216,173,75,.3);
 }
 
 .nav{
@@ -65,21 +71,22 @@ height:78px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:20px
+gap:20px;
 }
 
 .logo{
 color:var(--gold2);
-font-size:28px;
+font-size:27px;
 font-weight:bold;
-letter-spacing:2px
+letter-spacing:2px;
 }
 
 .logo small{
 display:block;
-font-size:13px;
+font-size:14px;
 text-align:center;
-letter-spacing:0
+letter-spacing:0;
+color:#fff;
 }
 
 nav{
@@ -87,186 +94,214 @@ display:flex;
 gap:25px;
 color:#fff;
 font-family:Arial,sans-serif;
-font-size:14px
+font-size:14px;
 }
 
 nav a:hover{
-color:var(--gold2)
+color:var(--gold2);
 }
 
 .lang{
 background:transparent;
 border:1px solid var(--gold);
 color:#fff;
-padding:9px 16px;
+padding:9px 15px;
 border-radius:20px;
 cursor:pointer;
-font-family:Arial,sans-serif
 }
+
+/* ================= BUTTON ================= */
 
 .btn{
 display:inline-block;
 background:linear-gradient(135deg,var(--gold2),var(--gold));
-color:#1b2418;
-padding:12px 24px;
+color:#172018;
+padding:13px 25px;
 border-radius:30px;
 font-family:Arial,sans-serif;
 font-weight:bold;
-transition:.25s
+transition:.25s;
 }
 
 .btn:hover{
 transform:translateY(-2px);
-box-shadow:0 12px 28px rgba(216,173,75,.35)
+box-shadow:0 12px 28px rgba(216,173,75,.35);
 }
 
-/* HERO */
+.outline{
+display:inline-block;
+border:1px solid var(--gold2);
+color:#fff;
+padding:12px 24px;
+border-radius:30px;
+font-family:Arial,sans-serif;
+}
+
+/* ================= HERO ================= */
 
 .hero{
 min-height:100vh;
-padding:130px 0 70px;
+padding:135px 0 80px;
+
 background:
-linear-gradient(90deg,rgba(8,25,15,.92),rgba(8,25,15,.55)),
+linear-gradient(
+90deg,
+rgba(8,25,15,.88),
+rgba(8,25,15,.48)
+),
 url('hero.jpg') center/cover;
+
 display:flex;
 align-items:center;
-color:#fff
+color:#fff;
 }
 
-.hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-align-items:center;
-gap:50px
+.hero-content{
+max-width:760px;
 }
 
 .eyebrow{
 color:var(--gold2);
-letter-spacing:4px;
-text-transform:uppercase;
+letter-spacing:3px;
 font-family:Arial,sans-serif;
-font-size:13px;
-margin-bottom:15px
+font-size:14px;
+margin-bottom:14px;
 }
 
 .hero h1{
-font-size:clamp(48px,7vw,86px);
+font-size:clamp(50px,8vw,90px);
 color:var(--gold2);
-line-height:1.05
+line-height:1;
+letter-spacing:3px;
 }
 
-.arabic{
-font-size:32px;
+.hero-ar{
+font-size:34px;
 color:#fff;
-margin:8px 0 18px
+margin:8px 0 18px;
 }
 
 .hero h2{
-font-size:30px;
-max-width:570px
+font-size:32px;
+margin-bottom:8px;
+}
+
+.hero-ar-title{
+font-size:24px;
+color:var(--gold2);
+margin-bottom:18px;
 }
 
 .hero p{
 font-size:18px;
-color:#eee;
-max-width:560px;
-margin:18px 0 28px
+color:#f1f1f1;
+max-width:700px;
+margin-bottom:28px;
 }
 
 .hero-actions{
 display:flex;
 gap:14px;
-flex-wrap:wrap
+flex-wrap:wrap;
 }
 
-.outline{
-border:1px solid var(--gold2);
-color:#fff;
-padding:11px 23px;
-border-radius:30px;
-font-family:Arial,sans-serif
-}
+/* ================= FEATURES ================= */
 
 .features{
 display:grid;
 grid-template-columns:repeat(5,1fr);
 gap:12px;
-margin-top:40px
+margin-top:40px;
 }
 
 .feature{
-border:1px solid rgba(216,173,75,.45);
+border:1px solid rgba(216,173,75,.5);
 padding:14px 8px;
 text-align:center;
 border-radius:15px;
-background:rgba(0,0,0,.22)
+background:rgba(0,0,0,.24);
 }
 
 .feature b{
 display:block;
 color:var(--gold2);
 font-size:12px;
-font-family:Arial,sans-serif
+font-family:Arial,sans-serif;
 }
 
-/* GENERAL */
+/* ================= SECTIONS ================= */
 
 section{
-padding:90px 0
+padding:90px 0;
 }
 
 .section-title{
 text-align:center;
 color:var(--g);
-font-size:42px;
-margin-bottom:12px
+font-size:43px;
+margin-bottom:8px;
+}
+
+.section-title-en{
+text-align:center;
+color:var(--gold);
+font-size:24px;
+margin-bottom:12px;
 }
 
 .section-sub{
 text-align:center;
 color:var(--muted);
-max-width:700px;
-margin:0 auto 45px
+max-width:750px;
+margin:0 auto 45px;
+font-family:Arial,sans-serif;
 }
 
-/* STORY */
+/* ================= STORY ================= */
 
 .story{
-background:var(--g);
-color:#fff
+background:var(--green);
+color:#fff;
 }
 
 .story-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:55px;
-align-items:center
+align-items:center;
 }
 
 .story-img{
 height:430px;
 border-radius:24px;
 background:url('grove.jpg') center/cover;
-box-shadow:0 18px 50px rgba(0,0,0,.18)
+box-shadow:0 18px 50px rgba(0,0,0,.25);
 }
 
 .story h2{
 color:var(--gold2);
-font-size:42px;
-margin-bottom:18px
+font-size:43px;
+margin-bottom:5px;
+}
+
+.story h3{
+font-size:24px;
+color:#fff;
+margin-bottom:20px;
 }
 
 .story p{
 font-size:18px;
-color:#edf0e8
+color:#edf0e8;
+margin-bottom:15px;
 }
 
-/* QUALITY */
+/* ================= QUALITY ================= */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(5,1fr);
-gap:18px
+gap:18px;
 }
 
 .card{
@@ -275,112 +310,171 @@ border:1px solid #dfd3b4;
 border-radius:18px;
 padding:28px 18px;
 text-align:center;
-box-shadow:0 8px 25px rgba(30,40,25,.06)
+box-shadow:0 8px 25px rgba(30,40,25,.06);
 }
 
 .card .icon{
 font-size:36px;
-color:#8b7027;
-margin-bottom:12px
+margin-bottom:10px;
 }
 
 .card h3{
-color:var(--g);
-font-size:18px
+color:var(--green);
+font-size:19px;
+}
+
+.card h4{
+font-family:Arial,sans-serif;
+font-size:14px;
+color:#8b7027;
+margin-top:3px;
 }
 
 .card p{
 font-family:Arial,sans-serif;
 font-size:13px;
 color:var(--muted);
-margin-top:8px
+margin-top:8px;
 }
 
-/* PRODUCTS */
+/* ================= PRODUCTS ================= */
 
-.product{
-background:var(--g);
-color:#fff
+.products{
+background:var(--green);
+color:#fff;
 }
 
-.products-grid{
+.products .section-title{
+color:var(--gold2);
+}
+
+.products .section-title-en{
+color:#fff;
+}
+
+.products .section-sub{
+color:#e7ece5;
+}
+
+.product-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:25px
+gap:25px;
 }
 
 .product-card{
-background:rgba(255,255,255,.04);
-border:1px solid rgba(216,173,75,.45);
+background:#102f1e;
+border:1px solid rgba(216,173,75,.55);
 border-radius:22px;
-padding:25px;
+overflow:hidden;
 text-align:center;
-overflow:hidden
+transition:.3s;
 }
 
-.product-card img{
+.product-card:hover{
+transform:translateY(-7px);
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+}
+
+.product-image{
+height:500px;
+background:#0b2417;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+}
+
+.product-image img{
 width:100%;
-height:430px;
+height:100%;
 object-fit:contain;
 display:block;
-margin:auto
 }
 
-.product-card h3{
+.product-info{
+padding:25px 20px 30px;
+}
+
+.product-info h3{
+font-size:27px;
 color:var(--gold2);
-font-size:25px;
-margin-top:15px
 }
 
-.product-card p{
-color:#eee;
-margin:8px 0 18px
+.product-info h4{
+font-family:Arial,sans-serif;
+font-size:18px;
+margin-bottom:12px;
+color:#fff;
 }
 
-.product-card .btn{
-padding:10px 20px
+.product-info p{
+font-family:Arial,sans-serif;
+font-size:14px;
+color:#dfe7dc;
+margin-bottom:15px;
 }
 
-/* CONTACT */
+.price{
+font-family:Arial,sans-serif;
+font-size:28px;
+font-weight:bold;
+color:var(--gold2);
+margin:12px 0 20px;
+}
+
+.price small{
+font-size:14px;
+color:#fff;
+font-weight:normal;
+}
+
+/* ================= CONTACT ================= */
 
 .contact{
-text-align:center
+text-align:center;
 }
 
 .contact-box{
 background:#fff;
 border-radius:25px;
 padding:45px;
-box-shadow:0 18px 50px rgba(0,0,0,.18);
+box-shadow:0 18px 50px rgba(0,0,0,.15);
 max-width:900px;
-margin:auto
+margin:auto;
 }
 
 .contact-items{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
-margin-top:30px
+margin-top:30px;
 }
 
 .contact-item{
 padding:20px;
 border:1px solid #e2d6b7;
-border-radius:15px
+border-radius:15px;
 }
 
 .contact-item b{
 display:block;
-color:var(--g);
-margin-bottom:5px
+color:var(--green);
+margin-bottom:5px;
+}
+
+.contact-item span{
+display:block;
+font-size:13px;
+color:#777;
 }
 
 .contact-item a{
 font-family:Arial,sans-serif;
-color:#4f5a4f
+color:#4f5a4f;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 
 footer{
 background:#0b2014;
@@ -388,132 +482,120 @@ color:#dfe7dc;
 text-align:center;
 padding:25px;
 font-family:Arial,sans-serif;
-font-size:13px
+font-size:13px;
 }
 
-/* ARABIC */
+/* ================= MOBILE ================= */
 
-body.ar{
-font-family:Tahoma,Arial,sans-serif;
-direction:rtl
-}
-
-body.ar nav{
-direction:rtl
-}
-
-body.ar .hero{
-text-align:right
-}
-
-body.ar .hero-actions{
-justify-content:flex-start
-}
-
-body.ar .section-title,
-body.ar .section-sub,
-body.ar .product-card,
-body.ar .contact{
-text-align:center
-}
-
-body.ar .story{
-text-align:right
-}
-
-/* MOBILE */
-
-@media(max-width:900px){
+@media(max-width:950px){
 
 nav{
-display:none
-}
-
-.hero-grid,
-.story-grid{
-grid-template-columns:1fr
+display:none;
 }
 
 .hero{
-text-align:center
+text-align:center;
+}
+
+.hero-content{
+margin:auto;
 }
 
 .hero p{
 margin-left:auto;
-margin-right:auto
+margin-right:auto;
 }
 
 .hero-actions{
-justify-content:center
+justify-content:center;
 }
 
 .features,
 .cards{
-grid-template-columns:repeat(2,1fr)
+grid-template-columns:repeat(2,1fr);
 }
 
-.products-grid{
-grid-template-columns:1fr
+.story-grid{
+grid-template-columns:1fr;
 }
 
-.product-card img{
-height:420px
+.product-grid{
+grid-template-columns:1fr;
+max-width:500px;
+margin:auto;
 }
 
 .contact-items{
-grid-template-columns:1fr
+grid-template-columns:1fr;
 }
+
 }
 
 @media(max-width:500px){
 
 .nav{
-height:68px
+height:68px;
 }
 
 .logo{
-font-size:22px
+font-size:22px;
 }
 
 .hero{
-padding-top:105px
+padding-top:105px;
 }
 
 .hero h1{
-font-size:52px
+font-size:52px;
 }
 
-.arabic{
-font-size:25px
+.hero-ar{
+font-size:27px;
 }
 
 .hero h2{
-font-size:24px
+font-size:25px;
+}
+
+.hero-ar-title{
+font-size:19px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+}
+
+.cards{
+grid-template-columns:1fr;
 }
 
 .section-title{
-font-size:34px
+font-size:34px;
 }
 
 .story h2{
-font-size:36px
+font-size:36px;
 }
 
-.features,
-.cards{
-grid-template-columns:1fr 1fr
+.product-image{
+height:430px;
 }
 
-.product-card img{
-height:360px
+.contact-box{
+padding:30px 18px;
 }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
+
 <div class="container nav">
 
 <a class="logo" href="#home">
@@ -522,102 +604,110 @@ MOLIVIRA
 </a>
 
 <nav>
-<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
-<a href="#story" data-en="Our Story" data-ar="قصتنا">Our Story</a>
-<a href="#quality" data-en="Quality" data-ar="الجودة">Quality</a>
-<a href="#product" data-en="Our Products" data-ar="منتجاتنا">Our Products</a>
-<a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+<a href="#home">Home | الرئيسية</a>
+<a href="#story">Our Story | قصتنا</a>
+<a href="#quality">Quality | الجودة</a>
+<a href="#products">Products | المنتجات</a>
+<a href="#contact">Contact | تواصل معنا</a>
 </nav>
 
-<button class="lang" id="langBtn" onclick="toggleLang()">
-العربية
-</button>
+<button class="lang">العربية | English</button>
 
 </div>
+
 </header>
 
 
 <main>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-<div class="container hero-grid">
+<div class="container">
 
-<div>
+<div class="hero-content">
 
-<div class="eyebrow"
-data-en="Premium Egyptian Olive Oil"
-data-ar="زيت زيتون مصري فاخر">
-Premium Egyptian Olive Oil
+<div class="eyebrow">
+PREMIUM EGYPTIAN OLIVE OIL
 </div>
 
 <h1>MOLIVIRA</h1>
 
-<div class="arabic">موليڤيرا</div>
+<div class="hero-ar">
+موليڤيرا
+</div>
 
-<h2
-data-en="Premium Extra Virgin Olive Oil"
-data-ar="زيت زيتون بكر ممتاز">
+<h2>
 Premium Extra Virgin Olive Oil
 </h2>
 
-<p
-data-en="From selected Egyptian farms to your table — carefully produced to preserve the natural character, rich flavor and quality of fine olive oil."
-data-ar="من مزارع مصرية مختارة إلى مائدتكم — يُنتج بعناية للحفاظ على الطابع الطبيعي والنكهة الغنية وجودة زيت الزيتون الفاخر.">
+<div class="hero-ar-title">
+زيت زيتون بكر ممتاز
+</div>
+
+<p>
 From selected Egyptian farms to your table — carefully produced to preserve the natural character, rich flavor and quality of fine olive oil.
+</p>
+
+<p dir="rtl">
+من أصول مزارع مصرية مختارة إلى مائدتكم — زيت زيتون بكر ممتاز بعناية، ليحافظ على طبيعته ونكهته الغنية وجودته المميزة.
 </p>
 
 <div class="hero-actions">
 
-<a class="btn"
-href="#product"
-data-en="Discover Our Products"
-data-ar="اكتشف منتجاتنا">
-Discover Our Products
+<a class="btn" href="#products">
+Discover Our Products | اكتشف منتجاتنا
 </a>
 
-<a class="outline"
-href="#contact"
-data-en="Contact Us"
-data-ar="تواصل معنا">
-Contact Us
+<a class="outline" href="#contact">
+Contact Us | تواصل معنا
 </a>
 
 </div>
 
 <div class="features">
 
-<div class="feature">🌿
-<b data-en="100% NATURAL" data-ar="طبيعي 100%">100% NATURAL</b>
+<div class="feature">
+🌿
+<b>100% NATURAL</b>
+<span>طبيعي 100%</span>
 </div>
 
-<div class="feature">❄️
-<b data-en="COLD PRESSED" data-ar="معصور على البارد">COLD PRESSED</b>
+<div class="feature">
+❄️
+<b>COLD PRESSED</b>
+<span>معصور على البارد</span>
 </div>
 
-<div class="feature">🫒
-<b data-en="ACIDITY &lt; 0.8%" data-ar="حموضة أقل من 0.8%">ACIDITY &lt; 0.8%</b>
+<div class="feature">
+🫒
+<b>ACIDITY &lt; 0.8%</b>
+<span>حموضة أقل من 0.8%</span>
 </div>
 
-<div class="feature">✦
-<b data-en="NO ADDITIVES" data-ar="بدون إضافات">NO ADDITIVES</b>
+<div class="feature">
+✦
+<b>NO ADDITIVES</b>
+<span>بدون إضافات</span>
 </div>
 
-<div class="feature">🍃
-<b data-en="RICH IN ANTIOXIDANTS" data-ar="غني بمضادات الأكسدة">RICH IN ANTIOXIDANTS</b>
+<div class="feature">
+🍃
+<b>RICH IN ANTIOXIDANTS</b>
+<span>غني بمضادات الأكسدة</span>
 </div>
 
 </div>
 
 </div>
+
 </div>
 
 </section>
 
 
-<!-- STORY -->
+<!-- ================= STORY ================= -->
 
 <section class="story" id="story">
 
@@ -627,24 +717,24 @@ Contact Us
 
 <div>
 
-<h2
-data-en="Our Story"
-data-ar="قصتنا">
-Our Story
-</h2>
+<h2>Our Story</h2>
 
-<p
-data-en="MOLIVIRA is more than olive oil. It is a celebration of Egyptian nature, careful selection and a passion for premium quality."
-data-ar="موليڤيرا أكثر من مجرد زيت زيتون. إنها احتفاء بالطبيعة المصرية والاختيار الدقيق والشغف بالجودة الفاخرة.">
+<h3>قصتنا</h3>
+
+<p>
 MOLIVIRA is more than olive oil. It is a celebration of Egyptian nature, careful selection and a passion for premium quality.
 </p>
 
-<br>
+<p dir="rtl">
+موليڤيرا أكثر من مجرد زيت زيتون؛ إنها احتفاء بالطبيعة المصرية، والاختيار الدقيق، والشغف بالجودة المميزة.
+</p>
 
-<p
-data-en="From selected Egyptian farms, our olive oil is produced with care to bring a naturally rich taste and a refined experience to every table."
-data-ar="من مزارع مصرية مختارة، يتم إنتاج زيت الزيتون لدينا بعناية لنقدم مذاقًا طبيعيًا غنيًا وتجربة مميزة لكل مائدة.">
+<p>
 From selected Egyptian farms, our olive oil is produced with care to bring a naturally rich taste and a refined experience to every table.
+</p>
+
+<p dir="rtl">
+من مزارع مصرية مختارة، يتم إنتاج زيت الزيتون بعناية ليقدم مذاقًا طبيعيًا غنيًا وتجربة مميزة لكل مائدة.
 </p>
 
 </div>
@@ -654,128 +744,131 @@ From selected Egyptian farms, our olive oil is produced with care to bring a nat
 </section>
 
 
-<!-- QUALITY -->
+<!-- ================= QUALITY ================= -->
 
 <section id="quality">
 
 <div class="container">
 
-<h2 class="section-title"
-data-en="Why Choose MOLIVIRA?"
-data-ar="لماذا تختار موليڤيرا؟">
-Why Choose MOLIVIRA?
+<h2 class="section-title">
+لماذا موليڤيرا؟
 </h2>
 
-<p class="section-sub"
-data-en="A premium experience built around purity, careful production and the natural goodness of olive oil."
-data-ar="تجربة فاخرة تقوم على النقاء والإنتاج بعناية والخير الطبيعي لزيت الزيتون.">
+<div class="section-title-en">
+Why Choose MOLIVIRA?
+</div>
+
+<p class="section-sub">
+جودة مميزة، إنتاج بعناية، ونقاء وطبيعية زيت الزيتون.
+<br>
 A premium experience built around purity, careful production and the natural goodness of olive oil.
 </p>
+
 
 <div class="cards">
 
 <div class="card">
 <div class="icon">🌿</div>
-<h3 data-en="100% Natural" data-ar="طبيعي 100%">100% Natural</h3>
-<p data-en="Pure and naturally crafted olive oil."
-data-ar="زيت زيتون نقي وطبيعي.">
-Pure and naturally crafted olive oil.
-</p>
+<h3>طبيعي 100%</h3>
+<h4>100% Natural</h4>
+<p>Pure and naturally crafted olive oil.</p>
 </div>
 
 <div class="card">
 <div class="icon">❄️</div>
-<h3 data-en="Cold Pressed" data-ar="معصور على البارد">Cold Pressed</h3>
-<p data-en="Produced with care to preserve natural qualities."
-data-ar="يُنتج بعناية للحفاظ على خصائصه الطبيعية.">
-Produced with care to preserve natural qualities.
-</p>
+<h3>معصور على البارد</h3>
+<h4>Cold Pressed</h4>
+<p>Produced with care to preserve natural qualities.</p>
 </div>
 
 <div class="card">
 <div class="icon">🫒</div>
-<h3 data-en="Acidity &lt; 0.8%" data-ar="حموضة أقل من 0.8%">Acidity &lt; 0.8%</h3>
-<p data-en="Low acidity for a premium product experience."
-data-ar="حموضة منخفضة لتجربة منتج فاخرة.">
-Low acidity for a premium product experience.
-</p>
+<h3>حموضة أقل من 0.8%</h3>
+<h4>Acidity &lt; 0.8%</h4>
+<p>Low acidity for a premium product experience.</p>
 </div>
 
 <div class="card">
 <div class="icon">✦</div>
-<h3 data-en="No Additives" data-ar="بدون إضافات">No Additives</h3>
-<p data-en="No unnecessary preservatives or additives."
-data-ar="بدون مواد حافظة أو إضافات غير ضرورية.">
-No unnecessary preservatives or additives.
-</p>
+<h3>بدون إضافات</h3>
+<h4>No Additives</h4>
+<p>No unnecessary preservatives or additives.</p>
 </div>
 
 <div class="card">
 <div class="icon">🍃</div>
-<h3 data-en="Rich in Antioxidants" data-ar="غني بمضادات الأكسدة">Rich in Antioxidants</h3>
-<p data-en="Naturally rich in beneficial compounds."
-data-ar="غني طبيعيًا بالمركبات المفيدة.">
-Naturally rich in beneficial compounds.
-</p>
+<h3>غني بمضادات الأكسدة</h3>
+<h4>Rich in Antioxidants</h4>
+<p>Naturally rich in beneficial compounds.</p>
 </div>
 
 </div>
+
 </div>
 
 </section>
 
 
-<!-- PRODUCTS -->
+<!-- ================= PRODUCTS ================= -->
 
-<section class="product" id="product">
+<section class="products" id="products">
 
 <div class="container">
 
-<h2 class="section-title"
-style="color:var(--gold2)"
-data-en="Our Products"
-data-ar="منتجاتنا">
-Our Products
+<h2 class="section-title">
+منتجات موليڤيرا
 </h2>
 
-<p class="section-sub"
-style="color:#eee"
-data-en="MOLIVIRA Premium Extra Virgin Olive Oil is available in three elegant bottle sizes."
-data-ar="زيت زيتون موليڤيرا البكر الممتاز متوفر في ثلاثة أحجام أنيقة.">
+<div class="section-title-en">
+Our Products
+</div>
+
+<p class="section-sub">
+زيت زيتون بكر ممتاز متوفر بثلاثة أحجام أنيقة.
+<br>
 MOLIVIRA Premium Extra Virgin Olive Oil is available in three elegant bottle sizes.
 </p>
 
 
-<div class="products-grid">
+<div class="product-grid">
 
 
 <!-- 250 ML -->
 
 <div class="product-card">
 
+<div class="product-image">
+
 <img
-src="product-250ml.jpg"
-alt="MOLIVIRA Extra Virgin Olive Oil 250 ml">
+src="oil-250ml.jpg"
+alt="MOLIVIRA موليڤيرا Premium Extra Virgin Olive Oil 250 ml"
+>
 
-<h3
-data-en="250 ml"
-data-ar="250 مل">
-250 ml
-</h3>
+</div>
 
-<p
-data-en="Premium Extra Virgin Olive Oil"
-data-ar="زيت زيتون بكر ممتاز">
+<div class="product-info">
+
+<h3>250 مل</h3>
+
+<h4>250 ml</h4>
+
+<p>
+زيت زيتون بكر ممتاز
+<br>
 Premium Extra Virgin Olive Oil
 </p>
 
-<a class="btn"
-href="https://wa.me/201024266851"
-target="_blank"
-data-en="Order / Contact"
-data-ar="اطلب / تواصل معنا">
-Order / Contact
+<div class="price">
+150 EGP
+<br>
+<small>150 جنيه مصري</small>
+</div>
+
+<a class="btn" href="https://wa.me/201024266851" target="_blank">
+اطلب الآن | Order Now
 </a>
+
+</div>
 
 </div>
 
@@ -784,29 +877,38 @@ Order / Contact
 
 <div class="product-card">
 
+<div class="product-image">
+
 <img
-src="product-500ml.jpg"
-alt="MOLIVIRA Extra Virgin Olive Oil 500 ml">
+src="oil-500ml.jpg"
+alt="MOLIVIRA موليڤيرا Premium Extra Virgin Olive Oil 500 ml"
+>
 
-<h3
-data-en="500 ml"
-data-ar="500 مل">
-500 ml
-</h3>
+</div>
 
-<p
-data-en="Premium Extra Virgin Olive Oil"
-data-ar="زيت زيتون بكر ممتاز">
+<div class="product-info">
+
+<h3>نصف لتر</h3>
+
+<h4>500 ml</h4>
+
+<p>
+زيت زيتون بكر ممتاز
+<br>
 Premium Extra Virgin Olive Oil
 </p>
 
-<a class="btn"
-href="https://wa.me/201024266851"
-target="_blank"
-data-en="Order / Contact"
-data-ar="اطلب / تواصل معنا">
-Order / Contact
+<div class="price">
+270 EGP
+<br>
+<small>270 جنيه مصري</small>
+</div>
+
+<a class="btn" href="https://wa.me/201024266851" target="_blank">
+اطلب الآن | Order Now
 </a>
+
+</div>
 
 </div>
 
@@ -815,31 +917,41 @@ Order / Contact
 
 <div class="product-card">
 
+<div class="product-image">
+
 <img
-src="product-1l.jpg"
-alt="MOLIVIRA Extra Virgin Olive Oil 1 Liter">
+src="oil-1liter.jpg"
+alt="MOLIVIRA موليڤيرا Premium Extra Virgin Olive Oil 1 Liter"
+>
 
-<h3
-data-en="1 Liter"
-data-ar="1 لتر">
-1 Liter
-</h3>
+</div>
 
-<p
-data-en="Premium Extra Virgin Olive Oil"
-data-ar="زيت زيتون بكر ممتاز">
+<div class="product-info">
+
+<h3>1 لتر</h3>
+
+<h4>1 Liter</h4>
+
+<p>
+زيت زيتون بكر ممتاز
+<br>
 Premium Extra Virgin Olive Oil
 </p>
 
-<a class="btn"
-href="https://wa.me/201024266851"
-target="_blank"
-data-en="Order / Contact"
-data-ar="اطلب / تواصل معنا">
-Order / Contact
+<div class="price">
+500 EGP
+<br>
+<small>500 جنيه مصري</small>
+</div>
+
+<a class="btn" href="https://wa.me/201024266851" target="_blank">
+اطلب الآن | Order Now
 </a>
 
 </div>
+
+</div>
+
 
 </div>
 
@@ -848,7 +960,7 @@ Order / Contact
 </section>
 
 
-<!-- CONTACT -->
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
@@ -856,51 +968,59 @@ Order / Contact
 
 <div class="contact-box">
 
-<h2 class="section-title"
-data-en="Get In Touch"
-data-ar="تواصل معنا">
-Get In Touch
+<h2 class="section-title">
+تواصل معنا
 </h2>
 
-<p class="section-sub"
-data-en="We would love to hear from you and answer your questions about MOLIVIRA."
-data-ar="يسعدنا التواصل معكم والإجابة عن استفساراتكم حول موليڤيرا.">
+<div class="section-title-en">
+Get In Touch
+</div>
+
+<p class="section-sub">
+يسعدنا تواصلكم معنا والاستفسار عن منتجات موليڤيرا.
+<br>
 We would love to hear from you and answer your questions about MOLIVIRA.
 </p>
+
 
 <div class="contact-items">
 
 <div class="contact-item">
-<b data-en="WhatsApp / Phone"
-data-ar="واتساب / الهاتف">
-WhatsApp / Phone
-</b>
 
-<a href="https://wa.me/201024266851">
+<b>واتساب / WhatsApp</b>
+
+<span>للطلب والاستفسارات</span>
+
+<a href="https://wa.me/201024266851" target="_blank">
 +20 102 426 6851
 </a>
+
 </div>
 
+
 <div class="contact-item">
-<b data-en="General Email"
-data-ar="البريد الإلكتروني">
-General Email
-</b>
+
+<b>البريد الإلكتروني</b>
+
+<span>General Email</span>
 
 <a href="mailto:info@molivira.com">
 info@molivira.com
 </a>
+
 </div>
 
+
 <div class="contact-item">
-<b data-en="Export Email"
-data-ar="بريد التصدير">
-Export Email
-</b>
+
+<b>بريد التصدير</b>
+
+<span>Export Email</span>
 
 <a href="mailto:export@molivira.com">
 export@molivira.com
 </a>
+
 </div>
 
 </div>
@@ -915,59 +1035,13 @@ export@molivira.com
 
 
 <footer>
-© 2026 MOLIVIRA. All Rights Reserved. | Premium Extra Virgin Olive Oil
+
+© 2026 MOLIVIRA | موليڤيرا
+<br>
+Premium Extra Virgin Olive Oil | زيت زيتون بكر ممتاز
+
 </footer>
 
-
-<script>
-
-/* LANGUAGE SWITCH */
-
-let currentLang = localStorage.getItem("moliviraLang") || "en";
-
-function setLanguage(lang){
-
-currentLang = lang;
-
-document.documentElement.lang = lang;
-
-document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-
-document.body.classList.toggle("ar",lang === "ar");
-
-document.querySelectorAll("[data-en]").forEach(function(element){
-
-element.innerHTML =
-lang === "ar"
-? element.getAttribute("data-ar")
-: element.getAttribute("data-en");
-
-});
-
-document.getElementById("langBtn").innerHTML =
-lang === "ar" ? "English" : "العربية";
-
-localStorage.setItem("moliviraLang",lang);
-
-}
-
-
-function toggleLang(){
-
-if(currentLang === "en"){
-setLanguage("ar");
-}else{
-setLanguage("en");
-}
-
-}
-
-
-/* START LANGUAGE */
-
-setLanguage(currentLang);
-
-</script>
 
 </body>
 </html>
