@@ -3,71 +3,1036 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MOLIVIRA | Premium Extra Virgin Olive Oil</title>
-<meta name="description" content="MOLIVIRA Premium Extra Virgin Olive Oil from selected Egyptian farms.">
+
+<meta name="description"
+content="MOLIVIRA Premium Extra Virgin Olive Oil from selected Egyptian farms.">
+
 <style>
-:root{--g:#102b1b;--g2:#183b25;--gold:#d8ad4b;--gold2:#f0cf72;--cream:#f6f0df;--white:#fff;--muted:#6e756e}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{font-family:Georgia,"Times New Roman",serif;background:var(--cream);color:#1c241e;line-height:1.65}
-a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
-header{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(16,43,27,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(216,173,75,.25)}
-.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{color:var(--gold2);font-size:28px;font-weight:bold;letter-spacing:2px}.logo small{display:block;font-size:13px;text-align:center}
-nav{display:flex;gap:25px;color:#fff;font-family:Arial,sans-serif;font-size:14px}nav a:hover{color:var(--gold2)}
-.lang{background:transparent;border:1px solid var(--gold);color:#fff;padding:9px 14px;border-radius:20px;cursor:pointer}
-.btn{display:inline-block;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1b2418;padding:12px 24px;border-radius:30px;font-family:Arial,sans-serif;font-weight:bold;transition:.25s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(216,173,75,.35)}
-.hero{min-height:100vh;padding:130px 0 70px;background:linear-gradient(90deg,rgba(8,25,15,.92),rgba(8,25,15,.55)),url('hero.jpg') center/cover;display:flex;align-items:center;color:#fff}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:50px}.eyebrow{color:var(--gold2);letter-spacing:4px;text-transform:uppercase;font-family:Arial,sans-serif;font-size:13px;margin-bottom:15px}
-.hero h1{font-size:clamp(48px,7vw,86px);color:var(--gold2);line-height:1.05}.arabic{font-size:32px;color:#fff;margin:8px 0 18px}.hero h2{font-size:30px;max-width:570px}.hero p{font-size:18px;color:#eee;max-width:560px;margin:18px 0 28px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.outline{border:1px solid var(--gold2);color:#fff;padding:11px 23px;border-radius:30px;font-family:Arial,sans-serif}
-.features{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}.feature{border:1px solid rgba(216,173,75,.45);padding:14px 8px;text-align:center;border-radius:15px;background:rgba(0,0,0,.22)}.feature b{display:block;color:var(--gold2);font-size:12px;font-family:Arial,sans-serif}
-section{padding:90px 0}.section-title{text-align:center;color:var(--g);font-size:42px;margin-bottom:12px}.section-sub{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 45px}
-.story{background:var(--g);color:#fff}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.story-img{height:430px;border-radius:24px;background:url('grove.jpg') center/cover;box-shadow:0 18px 50px rgba(0,0,0,.18)}.story h2{color:var(--gold2);font-size:42px;margin-bottom:18px}.story p{font-size:18px;color:#edf0e8}
-.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}.card{background:#fff;border:1px solid #dfd3b4;border-radius:18px;padding:28px 18px;text-align:center;box-shadow:0 8px 25px rgba(30,40,25,.06)}.card .icon{font-size:36px;color:#8b7027;margin-bottom:12px}.card h3{color:var(--g);font-size:18px}.card p{font-family:Arial,sans-serif;font-size:13px;color:var(--muted);margin-top:8px}
-.product{background:var(--g);color:#fff}.product-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}.product-img{min-height:500px;background:url('product-front.jpg') center/contain no-repeat}.product h2{font-size:48px;color:var(--gold2);margin-bottom:18px}.product ul{list-style:none;margin:25px 0}.product li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15)}.product li::before{content:"✦";color:var(--gold2);margin-right:10px}
-.contact{text-align:center}.contact-box{background:#fff;border-radius:25px;padding:45px;box-shadow:0 18px 50px rgba(0,0,0,.18);max-width:900px;margin:auto}.contact-items{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}.contact-item{padding:20px;border:1px solid #e2d6b7;border-radius:15px}.contact-item b{display:block;color:var(--g);margin-bottom:5px}.contact-item a{font-family:Arial,sans-serif;color:#4f5a4f}
-footer{background:#0b2014;color:#dfe7dc;text-align:center;padding:25px;font-family:Arial,sans-serif;font-size:13px}
-@media(max-width:900px){nav{display:none}.hero-grid,.story-grid,.product-grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.features,.cards{grid-template-columns:repeat(2,1fr)}.product-img{min-height:380px}.contact-items{grid-template-columns:1fr}}
-@media(max-width:500px){.nav{height:68px}.logo{font-size:22px}.hero{padding-top:105px}.hero h1{font-size:52px}.arabic{font-size:25px}.hero h2{font-size:24px}.section-title{font-size:34px}.story h2,.product h2{font-size:36px}}
+:root{
+  --green:#102b1b;
+  --green2:#183b25;
+  --dark:#08150d;
+  --gold:#d8ad4b;
+  --gold2:#f3d47a;
+  --cream:#f6f0df;
+  --white:#fff;
+  --muted:#70766f;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Georgia,"Times New Roman",serif;
+  background:var(--cream);
+  color:#1d241e;
+  line-height:1.65;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  background:rgba(8,21,13,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(216,173,75,.25);
+}
+
+.nav{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+.logo{
+  color:var(--gold2);
+  font-size:27px;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-align:center;
+}
+
+.logo small{
+  display:block;
+  font-size:13px;
+  letter-spacing:0;
+  margin-top:-4px;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+  color:#fff;
+  font-family:Arial,sans-serif;
+  font-size:14px;
+}
+
+nav a{
+  transition:.25s;
+}
+
+nav a:hover{
+  color:var(--gold2);
+}
+
+.lang{
+  background:transparent;
+  border:1px solid var(--gold);
+  color:#fff;
+  padding:9px 15px;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn{
+  display:inline-block;
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  color:#172018;
+  padding:13px 25px;
+  border-radius:30px;
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(216,173,75,.35);
+}
+
+.outline{
+  display:inline-block;
+  border:1px solid var(--gold2);
+  color:#fff;
+  padding:12px 24px;
+  border-radius:30px;
+  font-family:Arial,sans-serif;
+  transition:.25s;
+}
+
+.outline:hover{
+  background:rgba(216,173,75,.12);
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  min-height:100vh;
+  padding:145px 0 80px;
+  background:
+    linear-gradient(90deg,rgba(5,19,11,.90),rgba(5,19,11,.48)),
+    url("hero.jpg") center/cover no-repeat;
+
+  display:flex;
+  align-items:center;
+  color:#fff;
+}
+
+.hero-content{
+  max-width:760px;
+}
+
+.eyebrow{
+  color:var(--gold2);
+  letter-spacing:4px;
+  text-transform:uppercase;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:clamp(55px,8vw,100px);
+  line-height:1;
+  color:var(--gold2);
+  letter-spacing:3px;
+}
+
+.arabic-brand{
+  font-size:34px;
+  color:#fff;
+  margin:10px 0 18px;
+}
+
+.hero h2{
+  font-size:32px;
+  max-width:700px;
+}
+
+.hero p{
+  font-size:18px;
+  color:#eee;
+  max-width:650px;
+  margin:20px 0 30px;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.hero-features{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin-top:45px;
+}
+
+.hero-feature{
+  border:1px solid rgba(216,173,75,.45);
+  background:rgba(0,0,0,.25);
+  border-radius:15px;
+  padding:13px 7px;
+  text-align:center;
+  font-family:Arial,sans-serif;
+  font-size:11px;
+}
+
+.hero-feature .symbol{
+  display:block;
+  font-size:22px;
+  margin-bottom:4px;
+}
+
+.hero-feature strong{
+  color:var(--gold2);
+}
+
+/* ================= GENERAL SECTIONS ================= */
+
+section{
+  padding:95px 0;
+}
+
+.section-title{
+  text-align:center;
+  color:var(--green);
+  font-size:44px;
+  margin-bottom:12px;
+}
+
+.section-sub{
+  text-align:center;
+  color:var(--muted);
+  max-width:700px;
+  margin:0 auto 50px;
+}
+
+/* ================= STORY ================= */
+
+.story{
+  background:var(--green);
+  color:#fff;
+}
+
+.story-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.story-img{
+  min-height:470px;
+  border-radius:25px;
+
+  background:
+    linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),
+    url("hero.jpg") center/cover no-repeat;
+
+  box-shadow:0 20px 55px rgba(0,0,0,.25);
+}
+
+.story h2{
+  color:var(--gold2);
+  font-size:44px;
+  margin-bottom:20px;
+}
+
+.story p{
+  font-size:18px;
+  color:#edf0e8;
+}
+
+/* ================= QUALITY ================= */
+
+.quality{
+  background:var(--cream);
+}
+
+.quality-cards{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:18px;
+}
+
+.quality-card{
+  background:#fff;
+  border:1px solid #dfd3b4;
+  border-radius:20px;
+  padding:30px 18px;
+  text-align:center;
+  box-shadow:0 10px 28px rgba(30,40,25,.07);
+  transition:.25s;
+}
+
+.quality-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 35px rgba(30,40,25,.12);
+}
+
+.quality-icon{
+  font-size:36px;
+  margin-bottom:12px;
+}
+
+.quality-card h3{
+  color:var(--green);
+  font-size:18px;
+}
+
+.quality-card p{
+  font-family:Arial,sans-serif;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:8px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products{
+  background:
+    radial-gradient(circle at top,rgba(216,173,75,.10),transparent 40%),
+    var(--green);
+  color:#fff;
+}
+
+.products .section-title{
+  color:var(--gold2);
+}
+
+.products .section-sub{
+  color:#dce4d9;
+}
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.product-card{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(180deg,#142f20,#0a1b11);
+  border:1px solid rgba(216,173,75,.35);
+  border-radius:25px;
+  padding:25px 20px 30px;
+  text-align:center;
+  transition:.3s;
+}
+
+.product-card:hover{
+  transform:translateY(-7px);
+  border-color:var(--gold);
+  box-shadow:0 20px 45px rgba(0,0,0,.28);
+}
+
+.product-image{
+  height:530px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:15px;
+}
+
+.product-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:drop-shadow(0 20px 20px rgba(0,0,0,.35));
+}
+
+.product-card h3{
+  color:var(--gold2);
+  font-size:27px;
+  margin-bottom:5px;
+}
+
+.product-card p{
+  font-family:Arial,sans-serif;
+  color:#e4e9df;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.volume{
+  display:inline-block;
+  border:1px solid var(--gold);
+  color:var(--gold2);
+  padding:7px 18px;
+  border-radius:20px;
+  font-family:Arial,sans-serif;
+  font-weight:bold;
+}
+
+/* ================= PRODUCT DETAILS ================= */
+
+.product-details{
+  background:#f9f5e9;
+}
+
+.detail-box{
+  background:#fff;
+  border-radius:25px;
+  padding:45px;
+  box-shadow:0 15px 45px rgba(30,40,25,.10);
+  text-align:center;
+}
+
+.detail-box h2{
+  color:var(--green);
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.detail-box p{
+  color:var(--muted);
+  max-width:750px;
+  margin:0 auto 25px;
+}
+
+.detail-list{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin:25px 0;
+}
+
+.detail-tag{
+  border:1px solid #d9c58f;
+  border-radius:20px;
+  padding:9px 16px;
+  color:var(--green);
+  font-family:Arial,sans-serif;
+  font-size:13px;
+}
+
+/* ================= CONTACT ================= */
+
+.contact{
+  text-align:center;
+}
+
+.contact-box{
+  background:#fff;
+  border-radius:25px;
+  padding:50px;
+  box-shadow:0 18px 50px rgba(0,0,0,.13);
+  max-width:950px;
+  margin:auto;
+}
+
+.contact-items{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:35px;
+}
+
+.contact-item{
+  padding:22px;
+  border:1px solid #e2d6b7;
+  border-radius:16px;
+}
+
+.contact-item b{
+  display:block;
+  color:var(--green);
+  margin-bottom:7px;
+}
+
+.contact-item a{
+  font-family:Arial,sans-serif;
+  color:#4f5a4f;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  background:#091a10;
+  color:#dfe7dc;
+  text-align:center;
+  padding:28px;
+  font-family:Arial,sans-serif;
+  font-size:13px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:950px){
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    text-align:center;
+  }
+
+  .hero-content{
+    margin:auto;
+  }
+
+  .hero p{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .hero-actions{
+    justify-content:center;
+  }
+
+  .hero-features{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .story-img{
+    min-height:360px;
+  }
+
+  .quality-cards{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .products-grid{
+    grid-template-columns:1fr;
+    max-width:600px;
+    margin:auto;
+  }
+
+  .contact-items{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:520px){
+
+  .nav{
+    min-height:68px;
+  }
+
+  .logo{
+    font-size:21px;
+  }
+
+  .lang{
+    padding:7px 11px;
+    font-size:12px;
+  }
+
+  .hero{
+    padding-top:115px;
+  }
+
+  .hero h1{
+    font-size:53px;
+  }
+
+  .arabic-brand{
+    font-size:27px;
+  }
+
+  .hero h2{
+    font-size:24px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-features{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .section-title{
+    font-size:34px;
+  }
+
+  .story h2{
+    font-size:36px;
+  }
+
+  .quality-cards{
+    grid-template-columns:1fr;
+  }
+
+  .product-image{
+    height:450px;
+  }
+
+  .detail-box{
+    padding:30px 18px;
+  }
+
+  .detail-box h2{
+    font-size:32px;
+  }
+
+  .contact-box{
+    padding:30px 18px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><div class="container nav">
-<a class="logo" href="#home">MOLIVIRA<small>موليڤيرا</small></a>
-<nav><a href="#home">Home</a><a href="#story">Our Story</a><a href="#quality">Quality</a><a href="#product">Our Product</a><a href="#contact">Contact</a></nav>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+<div class="container nav">
+
+<a class="logo" href="#home">
+MOLIVIRA
+<small>موليڤيرا</small>
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#story">Our Story</a>
+<a href="#quality">Quality</a>
+<a href="#products">Our Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <button class="lang" onclick="toggleLang()">العربية</button>
-</div></header>
+
+</div>
+</header>
+
+
+<!-- ================= HERO ================= -->
 
 <main>
-<section class="hero" id="home"><div class="container hero-grid"><div>
-<div class="eyebrow">Premium Egyptian Olive Oil</div><h1>MOLIVIRA</h1><div class="arabic">موليڤيرا</div>
-<h2>Premium Extra Virgin Olive Oil</h2>
-<p>From selected Egyptian farms to your table — carefully produced to preserve the natural character, rich flavor and quality of fine olive oil.</p>
-<div class="hero-actions"><a class="btn" href="#product">Discover Our Product</a><a class="outline" href="#contact">Contact Us</a></div>
-<div class="features"><div class="feature">🌿<b>100% NATURAL</b></div><div class="feature">❄️<b>COLD PRESSED</b></div><div class="feature">🫒<b>ACIDITY &lt; 0.8%</b></div><div class="feature">✦<b>NO ADDITIVES</b></div><div class="feature">🍃<b>RICH IN ANTIOXIDANTS</b></div></div>
-</div></div></section>
 
-<section class="story" id="story"><div class="container story-grid"><div class="story-img"></div><div>
-<h2>Our Story</h2><p>MOLIVIRA is more than olive oil. It is a celebration of Egyptian nature, careful selection and a passion for premium quality.</p><br><p>From selected Egyptian farms, our olive oil is produced with care to bring a naturally rich taste and a refined experience to every table.</p>
-</div></div></section>
+<section class="hero" id="home">
 
-<section id="quality"><div class="container"><h2 class="section-title">Why Choose MOLIVIRA?</h2><p class="section-sub">A premium experience built around purity, careful production and the natural goodness of olive oil.</p>
-<div class="cards"><div class="card"><div class="icon">🌿</div><h3>100% Natural</h3><p>Pure and naturally crafted olive oil.</p></div><div class="card"><div class="icon">❄️</div><h3>Cold Pressed</h3><p>Produced with care to preserve natural qualities.</p></div><div class="card"><div class="icon">🫒</div><h3>Acidity &lt; 0.8%</h3><p>Low acidity for a premium product experience.</p></div><div class="card"><div class="icon">✦</div><h3>No Additives</h3><p>No unnecessary preservatives or additives.</p></div><div class="card"><div class="icon">🍃</div><h3>Rich in Antioxidants</h3><p>Naturally rich in beneficial compounds.</p></div></div></div></section>
+<div class="container">
 
-<section class="product" id="product"><div class="container product-grid"><div class="product-img"></div><div>
-<h2>Our Product</h2><p>Premium Extra Virgin Olive Oil — 250 ml</p><ul><li>Selected Egyptian olive farms</li><li>Cold pressed production</li><li>Premium extra virgin olive oil</li><li>Rich flavor and natural character</li><li>Elegant 250 ml presentation</li></ul>
-<a class="btn" href="https://wa.me/201024266851" target="_blank">Order / Contact on WhatsApp</a>
-</div></div></section>
+<div class="hero-content">
 
-<section class="contact" id="contact"><div class="container"><div class="contact-box">
-<h2 class="section-title">Get In Touch</h2><p class="section-sub">We would love to hear from you and answer your questions about MOLIVIRA.</p>
-<div class="contact-items"><div class="contact-item"><b>WhatsApp / Phone</b><a href="https://wa.me/201024266851">+20 102 426 6851</a></div><div class="contact-item"><b>General Email</b><a href="mailto:info@molivira.com">info@molivira.com</a></div><div class="contact-item"><b>Export Email</b><a href="mailto:export@molivira.com">export@molivira.com</a></div></div>
-</div></div></section>
+<div class="eyebrow">
+Premium Egyptian Olive Oil
+</div>
+
+<h1>MOLIVIRA</h1>
+
+<div class="arabic-brand">
+موليڤيرا
+</div>
+
+<h2>
+Premium Extra Virgin Olive Oil
+</h2>
+
+<p>
+From selected Egyptian farms to your table — carefully produced
+to preserve the natural character, rich flavor and quality of fine olive oil.
+</p>
+
+<div class="hero-actions">
+
+<a class="btn" href="#products">
+Discover Our Products
+</a>
+
+<a class="outline" href="#contact">
+Contact Us
+</a>
+
+</div>
+
+
+<div class="hero-features">
+
+<div class="hero-feature">
+<span class="symbol">🌿</span>
+<strong>100% NATURAL</strong>
+</div>
+
+<div class="hero-feature">
+<span class="symbol">❄️</span>
+<strong>COLD PRESSED</strong>
+</div>
+
+<div class="hero-feature">
+<span class="symbol">🫒</span>
+<strong>ACIDITY &lt; 0.8%</strong>
+</div>
+
+<div class="hero-feature">
+<span class="symbol">✦</span>
+<strong>NO ADDITIVES</strong>
+</div>
+
+<div class="hero-feature">
+<span class="symbol">🍃</span>
+<strong>ANTIOXIDANTS</strong>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= STORY ================= -->
+
+<section class="story" id="story">
+
+<div class="container story-grid">
+
+<div class="story-img"></div>
+
+<div>
+
+<h2>Our Story</h2>
+
+<p>
+MOLIVIRA is more than olive oil.
+It is a celebration of Egyptian nature,
+careful selection and a passion for premium quality.
+</p>
+
+<br>
+
+<p>
+From selected Egyptian farms, our olive oil is produced with care
+to bring a naturally rich taste and a refined experience to every table.
+</p>
+
+<br>
+
+<a class="btn" href="#products">
+Explore Our Products
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUALITY ================= -->
+
+<section class="quality" id="quality">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose MOLIVIRA?
+</h2>
+
+<p class="section-sub">
+A premium experience built around purity, careful production
+and the natural goodness of olive oil.
+</p>
+
+
+<div class="quality-cards">
+
+<div class="quality-card">
+<div class="quality-icon">🌿</div>
+<h3>100% Natural</h3>
+<p>Pure and naturally crafted olive oil.</p>
+</div>
+
+<div class="quality-card">
+<div class="quality-icon">❄️</div>
+<h3>Cold Pressed</h3>
+<p>Produced with care to preserve natural qualities.</p>
+</div>
+
+<div class="quality-card">
+<div class="quality-icon">🫒</div>
+<h3>Acidity &lt; 0.8%</h3>
+<p>Low acidity for a premium product experience.</p>
+</div>
+
+<div class="quality-card">
+<div class="quality-icon">✦</div>
+<h3>No Additives</h3>
+<p>No unnecessary preservatives or additives.</p>
+</div>
+
+<div class="quality-card">
+<div class="quality-icon">🍃</div>
+<h3>Rich in Antioxidants</h3>
+<p>Naturally rich in beneficial compounds.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Products
+</h2>
+
+<p class="section-sub">
+MOLIVIRA Premium Extra Virgin Olive Oil
+is available in three elegant bottle sizes.
+</p>
+
+
+<div class="products-grid">
+
+
+<!-- 250 ML -->
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="oil-250ml.jpg"
+alt="MOLIVIRA Extra Virgin Olive Oil 250 ml">
+</div>
+
+<h3>Quarter Liter</h3>
+
+<p>
+Premium Extra Virgin Olive Oil
+</p>
+
+<span class="volume">
+250 ml
+</span>
+
+</div>
+
+
+<!-- 500 ML -->
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="oil-500ml.jpg"
+alt="MOLIVIRA Extra Virgin Olive Oil 500 ml">
+</div>
+
+<h3>Half Liter</h3>
+
+<p>
+Premium Extra Virgin Olive Oil
+</p>
+
+<span class="volume">
+500 ml
+</span>
+
+</div>
+
+
+<!-- 1 LITER -->
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="oil-1liter.jpg"
+alt="MOLIVIRA Extra Virgin Olive Oil 1 Liter">
+</div>
+
+<h3>One Liter</h3>
+
+<p>
+Premium Extra Virgin Olive Oil
+</p>
+
+<span class="volume">
+1 Liter
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PRODUCT DETAILS ================= -->
+
+<section class="product-details">
+
+<div class="container">
+
+<div class="detail-box">
+
+<h2>
+MOLIVIRA Quality
+</h2>
+
+<p>
+Premium Extra Virgin Olive Oil from selected Egyptian farms,
+carefully produced to preserve its natural character and rich flavor.
+</p>
+
+<div class="detail-list">
+
+<span class="detail-tag">100% Natural</span>
+<span class="detail-tag">Cold Pressed</span>
+<span class="detail-tag">Acidity &lt; 0.8%</span>
+<span class="detail-tag">Rich in Antioxidants</span>
+<span class="detail-tag">No Additives</span>
+
+</div>
+
+<a class="btn" href="#contact">
+Contact MOLIVIRA
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2 class="section-title">
+Get In Touch
+</h2>
+
+<p class="section-sub">
+We would love to hear from you and answer your questions about MOLIVIRA.
+</p>
+
+
+<div class="contact-items">
+
+<div class="contact-item">
+<b>WhatsApp / Phone</b>
+<a href="https://wa.me/201024266851" target="_blank">
++20 102 426 6851
+</a>
+</div>
+
+
+<div class="contact-item">
+<b>General Email</b>
+<a href="mailto:info@molivira.com">
+info@molivira.com
+</a>
+</div>
+
+
+<div class="contact-item">
+<b>Export Email</b>
+<a href="mailto:export@molivira.com">
+export@molivira.com
+</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 </main>
-<footer>© 2026 MOLIVIRA. All Rights Reserved. | Premium Extra Virgin Olive Oil</footer>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+© 2026 MOLIVIRA. All Rights Reserved.
+<br>
+Premium Extra Virgin Olive Oil
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
 <script>
-function toggleLang(){const rtl=document.documentElement.dir!=="rtl";document.documentElement.dir=rtl?"rtl":"ltr";document.querySelector(".lang").textContent=rtl?"English":"العربية";}
+
+function toggleLang(){
+
+const current = document.documentElement.lang;
+
+if(current === "en"){
+
+document.documentElement.lang = "ar";
+document.documentElement.dir = "rtl";
+
+}else{
+
+document.documentElement.lang = "en";
+document.documentElement.dir = "ltr";
+
+}
+
+}
+
 </script>
+
 </body>
 </html>
