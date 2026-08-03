@@ -796,6 +796,42 @@ section{
   margin-top:5px;
 }
 
+
+.contact-actions{
+  display:flex;
+  justify-content:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+.contact-actions a{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  padding:9px 13px;
+  border-radius:22px;
+  font-family:Arial,sans-serif;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:0 !important;
+}
+.call-btn{
+  background:var(--green);
+  color:#fff !important;
+  border:1px solid var(--green);
+}
+.whatsapp-btn{
+  background:#fff;
+  color:var(--green) !important;
+  border:1px solid #b8a45d;
+}
+.contact-item small{
+  display:block;
+  margin-top:9px;
+  color:#777;
+  font-family:Arial,sans-serif;
+}
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -1071,7 +1107,7 @@ Premium cold pressed olive oil with a naturally rich taste and carefully selecte
 اكتشف منتجاتنا | Discover Products
 </a>
 
-<a class="outline" href="tel:01027605322">
+<a class="outline" href="tel:+201027605322">
 📞 تواصل معنا
 </a>
 
@@ -1164,7 +1200,7 @@ SUPER EXTRA VIRGIN OLIVE OIL — Available in three sizes.
 
 <img
 id="img250"
-src="product-front-250ml.jpg"
+src="oil-250ml.jpg"
 alt="MOLIVIRA 250ml Super Extra Virgin Olive Oil"
 >
 
@@ -1201,7 +1237,7 @@ SUPER EXTRA VIRGIN OLIVE OIL
 <div class="product-buttons">
 
 <button class="btn add-btn"
-onclick="addToCart('250ml','ربع لتر 250 ml','175','product-front-250ml.jpg')">
+onclick="addToCart('250ml','ربع لتر 250 ml','175','oil-250ml.jpg')">
 🛒 أضف للسلة
 </button>
 
@@ -1220,7 +1256,7 @@ onclick="addToCart('250ml','ربع لتر 250 ml','175','product-front-250ml.jpg
 
 <img
 id="img500"
-src="product-front-500ml.jpg"
+src="oil-500ml.jpg"
 alt="MOLIVIRA 500ml Super Extra Virgin Olive Oil"
 >
 
@@ -1257,7 +1293,7 @@ SUPER EXTRA VIRGIN OLIVE OIL
 <div class="product-buttons">
 
 <button class="btn add-btn"
-onclick="addToCart('500ml','نصف لتر 500 ml','300','product-front-500ml.jpg')">
+onclick="addToCart('500ml','نصف لتر 500 ml','300','oil-500ml.jpg')">
 🛒 أضف للسلة
 </button>
 
@@ -1276,7 +1312,7 @@ onclick="addToCart('500ml','نصف لتر 500 ml','300','product-front-500ml.jpg
 
 <img
 id="img1l"
-src="product-front-1liter.jpg"
+src="oil-1liter.jpg"
 alt="MOLIVIRA 1 Liter Super Extra Virgin Olive Oil"
 >
 
@@ -1313,7 +1349,7 @@ SUPER EXTRA VIRGIN OLIVE OIL
 <div class="product-buttons">
 
 <button class="btn add-btn"
-onclick="addToCart('1liter','لتر 1 Liter','550','product-front-1liter.jpg')">
+onclick="addToCart('1liter','لتر 1 Liter','550','oil-1liter.jpg')">
 🛒 أضف للسلة
 </button>
 
@@ -1446,9 +1482,11 @@ WHY MOLIVIRA?
 Your opinion matters to us. We would love to hear your feedback.
 </p>
 
-<a class="btn" href="tel:01027605322">
-⭐ شاركنا رأيك — 01027605322
-</a>
+<div class="contact-actions">
+  <a href="tel:+201027605322" class="call-btn">📞 اتصال</a>
+  <a href="https://wa.me/201027605322" target="_blank" class="whatsapp-btn">💬 واتساب</a>
+</div>
+<small>+20 102 760 5322</small>
 
 </div>
 
@@ -1481,47 +1519,41 @@ GET IN TOUCH
 <div class="contact-grid">
 
 <div class="contact-item">
-
 <div class="icon">📞</div>
-
 <strong>الشكاوى والاستفسارات</strong>
-
 <span>Complaints & Inquiries</span>
 
-<a href="tel:01027605322">
-01027605322
-</a>
-
+<div class="contact-actions">
+<a href="tel:+201027605322" class="call-btn">📞 اتصال</a>
+<a href="https://wa.me/201027605322" target="_blank" class="whatsapp-btn">💬 واتساب</a>
 </div>
 
+<small>+20 102 760 5322</small>
+</div>
 
 <div class="contact-item">
-
 <div class="icon">⭐</div>
-
 <strong>رأي العميل</strong>
-
 <span>Customer Feedback</span>
 
-<a href="tel:01027605322">
-شاركنا رأيك
-</a>
-
+<div class="contact-actions">
+<a href="tel:+201027605322" class="call-btn">📞 اتصال</a>
+<a href="https://wa.me/201027605322" target="_blank" class="whatsapp-btn">💬 واتساب</a>
 </div>
 
+<small>+20 102 760 5322</small>
+</div>
 
 <div class="contact-item">
-
 <div class="icon">💬</div>
+<strong>طلبات الجملة والتجزئة</strong>
+<span>Wholesale & Retail Orders</span>
 
-<strong>طلبات واتساب</strong>
+<div class="contact-actions">
+<a href="https://wa.me/201024266851" target="_blank" class="whatsapp-btn">💬 واتساب</a>
+</div>
 
-<span>WhatsApp Orders</span>
-
-<a href="https://wa.me/201024266851" target="_blank">
-+20 102 426 6851
-</a>
-
+<small>+20 102 426 6851</small>
 </div>
 
 
@@ -1568,7 +1600,7 @@ GET IN TOUCH
 </div>
 
 <button class="btn" style="width:100%" onclick="sendOrder()">
-إتمام الطلب عبر WhatsApp
+إتمام الطلب — جملة / تجزئة عبر WhatsApp
 </button>
 
 </div>
@@ -1654,20 +1686,20 @@ let back;
 
 if(size === '250'){
 img=document.getElementById('img250');
-front='product-front-250ml.jpg';
-back='product-back-250ml.jpg';
+front='oil-250ml.jpg';
+back='product-back.jpg';
 }
 
 if(size === '500'){
 img=document.getElementById('img500');
-front='product-front-500ml.jpg';
-back='product-back-500ml.jpg';
+front='oil-500ml.jpg';
+back='product-back.jpg';
 }
 
 if(size === '1l'){
 img=document.getElementById('img1l');
-front='product-front-1liter.jpg';
-back='product-back-1liter.jpg';
+front='oil-1liter.jpg';
+back='product-back.jpg';
 }
 
 imageState[size]=!imageState[size];
