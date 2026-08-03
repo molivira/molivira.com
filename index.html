@@ -1011,7 +1011,178 @@ body.english .contact-item{
   text-align:center;
 }
 
+
+/* ================= FINAL VISUAL POLISH ================= */
+
+/* Bigger promotional strip at the very top */
+.topbar{
+  min-height:76px;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  font-size:19px;
+  line-height:1.35;
+  letter-spacing:.1px;
+}
+.topbar strong{
+  font-size:21px;
+  font-weight:800;
+}
+
+/* Bigger balanced MOLIVIRA / موليڤيرا logo */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:29px;
+  letter-spacing:2px;
+}
+.logo-en,
+.logo-ar{
+  display:inline-block;
+  color:var(--gold2);
+  font-size:29px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+}
+.logo-ar{
+  direction:rtl;
+  letter-spacing:0;
+  font-family:Tahoma,Arial,sans-serif;
+}
+
+/* Make the main navigation easier for customers to read */
+nav{
+  gap:26px;
+  font-size:16px;
+  font-weight:600;
+}
+.nav{
+  min-height:88px;
+}
+.lang{
+  padding:11px 16px;
+  font-size:15px;
+}
+.icon-btn{
+  min-width:46px;
+  height:46px;
+  font-size:20px;
+}
+
+/* Hero image layer: use real <img> so GitHub Pages loads it reliably */
+.hero-slide{
+  display:block;
+  background:none !important;
+}
+.hero-slide > img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+.hero-slide::after{
+  z-index:1;
+}
+.hero-content{
+  z-index:3;
+}
+.hero-dots{
+  z-index:5;
+}
+
+/* Larger hero typography */
+.eyebrow{
+  font-size:15px;
+  letter-spacing:4px;
+}
+.hero h1{
+  font-size:clamp(58px,8.5vw,102px);
+}
+.hero-ar{
+  font-size:clamp(42px,5vw,58px);
+  font-weight:700;
+}
+.hero h2{
+  font-size:clamp(30px,3.2vw,42px);
+}
+.hero-sub-ar{
+  font-size:28px;
+  font-weight:700;
+}
+.hero p{
+  font-size:19px;
+  line-height:1.8;
+}
+
+/* Bigger top trust strip */
+.trust-item{
+  padding:25px 10px;
+}
+.trust-item strong{
+  font-size:15px;
+}
+.trust-item span{
+  font-size:15px;
+}
+.trust-icon{
+  font-size:28px;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .topbar{
+    min-height:64px;
+    padding:12px 10px;
+    font-size:16px;
+  }
+  .topbar strong{
+    font-size:18px;
+  }
+  .logo{
+    gap:8px;
+  }
+  .logo-en,
+  .logo-ar{
+    font-size:23px;
+  }
+  nav{
+    font-size:15px;
+  }
+}
+@media(max-width:500px){
+  .topbar{
+    min-height:60px;
+    padding:10px 8px;
+    font-size:14px;
+  }
+  .topbar strong{
+    font-size:16px;
+  }
+  .logo{
+    gap:6px;
+  }
+  .logo-en,
+  .logo-ar{
+    font-size:20px;
+  }
+  .hero h1{
+    font-size:54px;
+  }
+  .hero-ar{
+    font-size:38px;
+  }
+}
+
 </style>
+<link rel="preload" as="image" href="hero-1.jpg">
+<link rel="preload" as="image" href="hero-2.jpg">
 </head>
 
 <body>
@@ -1031,8 +1202,8 @@ body.english .contact-item{
 <div class="container nav">
 
 <a href="#home" class="logo">
-MOLIVIRA
-<small>موليڤيرا</small>
+  <span class="logo-en">MOLIVIRA</span>
+  <span class="logo-ar">موليڤيرا</span>
 </a>
 
 <nav>
@@ -1068,8 +1239,12 @@ English
 
 <section class="hero" id="home">
 
-<div class="hero-slide active" style="background-image:url('hero-1.jpg')"></div>
-<div class="hero-slide" style="background-image:url('hero-2.jpg')"></div>
+<div class="hero-slide active">
+  <img src="hero-1.jpg" alt="MOLIVIRA Premium Olive Oil" onerror="this.onerror=null;this.src='hero.jpg';">
+</div>
+<div class="hero-slide">
+  <img src="hero-2.jpg" alt="MOLIVIRA Premium Olive Oil" onerror="this.onerror=null;this.src='hero.jpg';">
+</div>
 
 <div class="container">
 
